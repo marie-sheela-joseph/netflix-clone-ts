@@ -1,4 +1,3 @@
-import React from 'react'
 import './profileScreen.css'
 import Nav from '../Nav'
 import { useSelector } from 'react-redux'

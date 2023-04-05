@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
 import { useAppDispatch } from './app/hooks';
-// import { setUser,selectUser } from './features/user/userSlice';
 import { selectUser,login,logout } from './features/user/userSlice';
 import { useAppSelector } from './app/hooks';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
