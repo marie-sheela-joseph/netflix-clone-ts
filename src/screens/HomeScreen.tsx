@@ -1,7 +1,6 @@
-import React from 'react'
 import './homeScreen.css'
 import Nav from '../Nav'
-// import Banner from '../Banner'
+import Banner from '../Banner'
 import Row from '../Row'
 import { requests } from '../requests'
 
@@ -9,7 +8,7 @@ function HomeScreen() {
     return (
         <div className='homeScreen'>
             <Nav />
-            {/* <Banner /> */}
+            <Banner />
             <Row title='NETFLIX ORIGINALS' fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
             <Row title='Trending Now' fetchUrl={requests.fetchTrending} isLargeRow />
             <Row title='Top Rated' fetchUrl={requests.fetchTopRated} isLargeRow />
