@@ -1,11 +1,11 @@
 import './profileScreen.css'
 import Nav from '../Nav'
-import { useSelector } from 'react-redux'
+import { useAppSelector } from '../app/hooks';
 import { selectUser } from '../features/user/userSlice'
 import { auth } from '../firebase'
 
 function ProfileScreen() {
-    const user = useSelector(selectUser)
+    const user = useAppSelector(selectUser)
     return (
         <div className='profileScreen'>
             <Nav />
